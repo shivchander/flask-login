@@ -1,0 +1,28 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="title">
+        Welcome, {{ name }}!
+    </h1>
+    <h2 class="subtitle">
+        Your First Name is {{ name }}
+    </h2>
+    <h2 class="subtitle">
+        Your Last Name is {{ last_name }}
+    </h2>
+    <h2 class="subtitle">
+        Your Email is {{ email }}
+    </h2>
+    <h2 class="subtitle">
+        Your File is {{ file_name }}
+    </h2>
+    <h2 class="subtitle">
+        Number of words in your file is {{ file_word_count }}
+    </h2>
+    <h2 class="subtitle">
+        <a class="button" href="profile/download">Download</a>
+    </h2>
+
+{% endblock %}
